@@ -80,14 +80,13 @@ export default function Jobs() {
           <div className="w-10 h-10 rounded-2xl bg-neutral-900 text-white flex items-center justify-center font-bold text-sm">JF</div>
           <div>
             <span className="font-serif font-bold text-lg block leading-none text-neutral-900">JobFusion</span>
-            <span className="text-[10px] text-neutral-400 uppercase tracking-widest font-mono">Graph Aggregator</span>
+          
           </div>
         </div>
 
         <nav className="hidden md:flex items-center gap-1 bg-neutral-100 p-1.5 rounded-2xl">
           <Link to="/dashboard" className="px-4 py-2 rounded-xl text-neutral-600 text-xs">Overview</Link>
           <Link to="/jobs" className="px-4 py-2 rounded-xl bg-neutral-900 text-white text-xs">Aggregated Jobs</Link>
-          <Link to="/profile" className="px-4 py-2 rounded-xl text-neutral-600 text-xs">Profile Nodes</Link>
         </nav>
 
         <button onClick={handleLogout} className="px-4 py-2 rounded-xl bg-red-50 text-red-600 text-xs font-semibold cursor-pointer">Logout</button>
@@ -98,7 +97,7 @@ export default function Jobs() {
         <div className="bg-neutral-900 text-white rounded-[2.5rem] p-8 flex items-center justify-between">
           <div>
             <span className="text-[10px] uppercase text-pink-300 bg-pink-500/20 px-3 py-1 rounded-full">Live Feed Active</span>
-            <h1 className="text-3xl font-serif mt-4">Real-Time Aggregated Openings ({filteredJobs.length})</h1>
+            <h1 className="text-3xl font-serif mt-4"> JobOpenings</h1>
           </div>
           <button onClick={loadDemoJobs} className="px-6 py-3 rounded-2xl bg-white text-neutral-950 font-semibold text-xs cursor-pointer">🔄 Refresh Feed</button>
         </div>

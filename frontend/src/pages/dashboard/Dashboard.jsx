@@ -80,7 +80,7 @@ function Dashboard() {
           <Link to="/dashboard" className={`px-4 py-2 rounded-xl font-medium text-xs transition ${location.pathname === "/dashboard" ? "bg-neutral-900 text-white shadow-sm" : "text-neutral-600 hover:text-neutral-900"}`}>Overview</Link>
           <Link to="/jobs" className={`px-4 py-2 rounded-xl font-medium text-xs transition ${location.pathname === "/jobs" ? "bg-neutral-900 text-white shadow-sm" : "text-neutral-600 hover:text-neutral-900"}`}>Aggregated Jobs</Link>
         
-          <Link to="/profile" className={`px-4 py-2 rounded-xl font-medium text-xs transition ${location.pathname === "/profile" ? "bg-neutral-900 text-white shadow-sm" : "text-neutral-600 hover:text-neutral-900"}`}>Profile Nodes</Link>
+          
         </nav>
 
         <div className="flex items-center gap-4">
@@ -125,10 +125,10 @@ function Dashboard() {
           <div className="relative z-10">
             <div className="flex flex-wrap items-center gap-3">
               <span className="text-[10px] font-semibold tracking-wider uppercase text-pink-300 bg-pink-500/20 px-3.5 py-1.5 rounded-full border border-pink-500/30">
-                CognoDB Neural Engine
+                
               </span>
               <span className="text-[10px] font-medium text-neutral-300 bg-white/10 px-3.5 py-1.5 rounded-full border border-white/20">
-                CGPA: {userData.cgpa}
+                
               </span>
             </div>
 
